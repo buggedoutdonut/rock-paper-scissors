@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <script>
+        function getComputerChoice(){
+            let aihand = "";
+            let aichoice = 0;
+            let ai = Math.floor(Math.random(aichoice) * 3) + 1;
+            switch(ai){
+                case 1:
+                    aihand = "Rock";
+                    break;
+                case 2:
+                    aihand = "Paper";
+                    break;
+                case 3:
+                    aihand = "Scissors";
+                    break;
+            }
+            return aihand
+        }
+       
+        function getPlayerChoice(){
+            playerHand = "";
+            playerChoice = prompt("ROCK, PAPER or SCISSORS?!").toLowerCase();
+            if (playerChoice == "rock") {
+                playerHand = "Rock";
+            } else if(playerChoice == "scissors"){
+                playerHand = "Scissors";
+            } else if(playerChoice == "paper"){
+                playerHand = "Paper";
+            } else{ alert("Please input only Rock, Paper or Scissors!");
+                playerHand = "Restart";
+            }
+            return playerHand
+        }
+
+
+        function playRounds(){
+        let aiScore = 0;
+        let userScore = 0;
+        let i;
+        for (i=1;i<6;i++){
+            let aiHand = getComputerChoice();
+            let userHand = getPlayerChoice();
+            if(userHand == "Restart"){
+                i--;
+            }else{
+                if(playerHand=="Rock" && aiHand=="Paper"){
+                    console.log("Ai Wins!"); aiScore += 1;
+                } else if(playerHand=="Scissors" && aiHand=="Scissors"){
+                    console.log("Ai Wins!"); aiScore += 1;
+                } else if(playerHand=="Scissors" && aiHand=="Rock"){
+                    console.log("Ai Wins!"); aiScore += 1;
+                } else if(playerHand==aiHand){
+                    console.log("It's a tie!")
+                } else {
+                    console.log("Player Wins!"); userScore += 1;} 
+                    console.log("AI chose: " + aiHand);
+                    console.log("Player chose: " + userHand);
+                    aiHand="";
+                    userHand="";
+                    console.log("ROUND " + i + " DONE!")
+                }
+            }
+            console.log("GAME FINISHED WITH AI SCORE: "+ aiScore 
+                + " and Player Score: " + userScore)
+            
+            if (aiScore>userScore){
+                console.log("🤖 AI is the Winner of this Game! 😔")
+            } else if (userScore>aiScore){
+                console.log("👤 Player is the Winner of this Game! 🎉")
+            } else {
+                console.log("Well... It's a tie!")
+            }
+        }   
+
+        playRounds();
+    </script>
+</body>
+</html>
