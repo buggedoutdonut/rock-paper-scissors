@@ -1,0 +1,155 @@
+body{
+    background:url(images/tavern.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    display:flex;
+    flex-direction: column;
+    margin:15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+    background:black;
+    color:white;
+    padding:20px;
+    margin:0px;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    color:white;
+    margin:0px;
+    padding:15px;
+}
+
+.userSide, .enemySide{
+    max-width:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+
+.userIcon, .enemyIcon{
+    border:2px solid beige;
+    border-radius:15px 15px 10px 10px;
+    max-width:140px;
+}
+
+.userName, .enemyName{
+    background: black;
+    width: 50px;
+    padding: 30px;
+    border: solid black 1px;
+    border-radius: 35px 5px;
+    font-weight:bold;
+}
+
+.score{
+    font-size:50px;
+    color:white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.mainContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:200px;
+    gap:200px;
+    flex-wrap:wrap;
+    padding-bottom: 110px;
+}
+
+.btns{
+    width:100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:169px;
+    width:300px;
+    border:1px;
+    border-radius: 15px 15px;
+}
+#sword{
+    background-image: url(images/sword-static.png);
+    background-size:cover;
+}
+#sword:hover{
+    background-image: url(images/sword.gif);
+}
+
+#bow{
+    background-image:url("images/bow-static.jpeg");
+    background-size: cover;
+}
+#bow:hover{
+    background-image: url(images/bow.gif);
+
+}
+#dagger{
+    background-image: url(images/dagger-static.png);
+    background-size: cover;
+}
+#dagger:hover{
+    background-image: url(images/dagger.gif);
+    background-size: cover;
+
+}
+
+.smallContainer{
+    max-width:400px;
+    color:white;
+    text-align: center;
+
+}
+
+.logo{
+    max-width:45px;
+    height:30px;
+    vertical-align: middle;
+    border:solid black 2px;
+    border-radius:15px 15px;
+    margin-right:5px;
+}
+
+.announcer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:30px;
+    gap:15px;
+}
+
+.announcerFlex{
+    display:flex;
+    flex-direction: column;
+    flex:0 1 auto;
+}
+
+.announcerName{
+    background-color: black;
+    color:white;
+    padding:8px;
+    border:solid black 1px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.announcerMessage{
+    background-color: white;
+    color:black;
+    padding:8px;
+    border:solid black 1px;
+    border-radius: 0px 0px 10px 10px;
+    height:50px;
+}
+
