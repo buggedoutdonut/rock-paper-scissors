@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let palindrome = "";    
+    let palWord = prompt("check if palidrome");
+    
+    function palindromeCheck(){
+        for(i=0;i<palWord.length;i++){
+            let checkIndex = palWord.at(-i + -1);
+            palindrome += checkIndex;
+        }
+        
+        if(palindrome==palWord){
+            alert("Your word is a palindrome! " + palindrome + " = " + palWord);
+        } else {
+            alert("Your word is not a palindrome! " + palindrome + " = " + palWord );
+        }
+    }
+
+    palindromeCheck();
+
+    </script>
+</body>
+</html>

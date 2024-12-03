@@ -4,42 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Rock, Paper, Scissors REVAMPED</title>
+    <title>Rock, Paper, Scissors</title>
 </head>
 <body>
 
 <div class="header">
-    Rock, Paper, Scissors REVAMPED LOGO HERE
+    <a style="font-size:20px"><img src="images/header.png" width="40" style="vertical-align:middle;">Sword, Bow and Dagger </a>
+    <a style="font-size:10px;">A Rock Paper Scissors Project</a>
 </div>
 
 <div class="hero">
     <div class="userSide">
         <div class="userIcon"><img src="images/user-avatar.jpg" width="100" style="border-radius:15px 15px 10px 10px;"></div>
-        <div class="userName">Player</div>
+        <div class="announcerFlex">
+            <div class="userName">Player</div>
+            <div class="playerMessage">Nah, I'd win.</div>
+        </div>
+        
     </div>
     <div class="score">
-        <a class="playerScore">0</a> - <a class="enemyScore">0</a>
+        <a class="playerScore" style="color:green">0</a> - <a class="enemyScore" style="color:red;">0</a>
     </div>
     <div class="enemySide"> 
-        <div class="enemyName">Enemy</div>
-        <div class="enemyIcon"><img src="images/enemy-avatar.png" width="100"></div>
+        <div class="announcerFlex">
+            <div class="enemyName">Swaggering Car</div>
+            <div class="enemyMessage">Let's see what you're capable of!</div>
+        </div>
+        <div class="enemyIcon"><img src="images/enemy-avatar.jpeg" width="100"></div>
     </div>
 </div>
 
 <div class="mainContent">
-    <div class="smallContainer">
+    <div class="smallContainer" style="background:rgb(117, 125, 48)">
         <button class="btns" id="sword"></button>
             <p><img src="images/sword-logo.jpeg" class="logo"><b> The Sword</b></p>
             <p><i><b>the Sword beats the Dagger</b></i></p>
     </div>
 
-    <div class="smallContainer">
+    <div class="smallContainer" style="background:rgba(20, 64, 134, 0.8)">
         <button class="btns" id="bow"></button>
             <p><img src="images/bow-logo.jpeg" class="logo"><b>The Bow</b></p>
             <p><b><i>the Bow beats the Sword</i></b></p>
     </div>
 
-   <div class="smallContainer">
+   <div class="smallContainer" style="background:rgba(152, 18, 33, 0.8)">
         <button class="btns" id="dagger"></button>
             <p><img src="images/dagger-logo.jpeg" class="logo"><b>The Dagger</b></p>
             <p><b><i>the Dagger beats the Bow</i></b></p>
@@ -49,13 +57,15 @@
 <div class="announcer">
     <div class="userIcon"><img src="images/assistant-avatar.png" width="100"></div>
     <div class="announcerFlex">
-        <div class="announcerName">Announcer</div>
-        <div class="announcerMessage">Welcome! You need to win 5 rounds to win the game.</div>
+        <div class="announcerName">Assistant</div>
+        <div class="announcerMessage">Welcome! You need to win 5 rounds to win the game. Please click the images to select either sword, bow or dagger.</div>
     </div>
 
 </div>
 
-
+<div class="header" style=" background:rgba(15, 18, 29, 1);font-size:10px;justify-content: center;margin-top:65px;">
+    Created by : Buggedoutdonut
+</div>
 
 </body>
 <script src="gamefunction.js"></script>
